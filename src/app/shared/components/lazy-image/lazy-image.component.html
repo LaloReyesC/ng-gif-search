@@ -1,0 +1,5 @@
+<div>
+  <img [src]="url" [alt]="alt" class="w-100 card-image-top animate__animated animate__bounceIn"
+    [ngStyle]="{ display: isLoaded ? '': 'none' }" (load)="onLoaded()">
+  <img src="assets/rings.svg" alt="Loader" class="card-image-top" *ngIf="!isLoaded">
+</div>

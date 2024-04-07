@@ -1,0 +1,9 @@
+<div class="card bg-dark m-1 text-white">
+  <shared-lazy-image class="align-self-center" [alt]="gif.title"
+    [url]="gif.images.downsized_medium.url"></shared-lazy-image>
+  <div class="card-body">
+    <p class="card-text text-center">
+      {{gif.title || 'Sin titulo'}}
+    </p>
+  </div>
+</div>

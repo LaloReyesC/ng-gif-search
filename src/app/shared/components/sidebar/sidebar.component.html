@@ -1,0 +1,9 @@
+<div class="bg-dark text-white text-center sidebar p-3">
+  <h3>Gif search</h3>
+  <hr>
+  <div class="list-group" *ngFor="let search of searchHistory; let isFirst = first">
+    <button class="list-group-item mb-1" [ngClass]="{ 'active disabled': isFirst }" (click)="searchGifs(search)">
+      {{search | titlecase}}
+    </button>
+  </div>
+</div>

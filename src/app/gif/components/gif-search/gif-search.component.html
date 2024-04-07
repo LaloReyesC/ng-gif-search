@@ -1,0 +1,7 @@
+<div class="row my-3">
+  <div class="col">
+    <label class="pb-1" for="tagInput">{{'Buscador de gifs' | titlecase}}</label>
+    <input autofocus class="form-control" id="tagInput" name="tagInput" placeholder="Ingresa algo que buscar"
+      type="text" (keyup.enter)="onSearch()" #txtTagInput>
+  </div>
+</div>
