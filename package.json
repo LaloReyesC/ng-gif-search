@@ -11,7 +11,7 @@
     "test": "ng test",
     "del:docs": "del-cli docs",
     "del:dist": "del-cli dist",
-    "copy:dist": "copyfiles -f dist/gif-search/browser/**/* ./docs"
+    "copy:dist": "copyfiles -f dist/gif-search/browser/* ./docs && copyfiles -f dist/gif-search/browser/assets/* ./docs/assets"
   },
   "private": true,
   "dependencies": {
